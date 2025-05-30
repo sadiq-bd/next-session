@@ -1,8 +1,9 @@
 {
-  "name": "next-session",
+  "name": "@sadiq-bd/next-session",
   "version": "1.0.0",
   "description": "Session lib",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "keywords": [
     "session"
