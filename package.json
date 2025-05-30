@@ -1,7 +1,7 @@
 {
   "name": "@sadiq-bd/next-session",
-  "version": "2.0.0",
-  "description": "Session lib",
+  "version": "2.1.0",
+  "description": "Session lib for nextjs",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
