@@ -8,10 +8,14 @@
   "keywords": [
     "session"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sadiq-bd/next-session.git"
+  },
   "author": "Sadiq",
   "license": "MIT",
   "peerDependencies": {
-    "next": "^13.0.0"
+    "next": "^15.0.0"
   },
   "dependencies": {
     "jose": "^6.0.11",
