@@ -4,7 +4,7 @@ import { cookies } from 'next/headers'
  
 const secretKey = process.env.SESSION_SECRET;
  
-export async function encrypt(payload: {}) {
+export async function encrypt(payload) {
   return new SignJWT(payload)
     .setProtectedHeader({ alg: 'HS256' })
     .setIssuedAt()
@@ -12,7 +12,7 @@ export async function encrypt(payload: {}) {
     .sign(new TextEncoder().encode(secretKey));
 }
  
-export async function decrypt(session: string | undefined = '') {
+export async function decrypt(session) {
   try {
     const { payload } = await jwtVerify(session, new TextEncoder().encode(secretKey), {
       algorithms: ['HS256'],
@@ -24,7 +24,7 @@ export async function decrypt(session: string | undefined = '') {
   }
 }
 
-export async function getSession(key?: string, fallback: string|null = null) {
+export async function getSession(key, fallback = null) {
   const session = (await cookies()).get('app_session')?.value;
   const payload = await decrypt(session);
   // @ts-ignore
@@ -32,7 +32,7 @@ export async function getSession(key?: string, fallback: string|null = null) {
   return payload;
 }
 
-export async function setSession(key: string, value: string) {
+export async function setSession(key, value) {
   const session = (await cookies()).get('app_session')?.value;
   let payload = (await decrypt(session)) ?? {};
  
