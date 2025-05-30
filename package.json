@@ -1,14 +1,14 @@
 {
   "name": "@sadiq-bd/next-session",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Session lib",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
-  "scripts": {},
-  "keywords": [
-    "nextjs",
-    "session"
-  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["nextjs", "session"],
   "repository": {
     "type": "git",
     "url": "https://github.com/sadiq-bd/next-session.git"
