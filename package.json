@@ -1,6 +1,6 @@
 {
   "name": "@sadiq-bd/next-session",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Session lib",
   "main": "index.js",
   "type": "module",
@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/sadiq-bd/next-session.git"
   },
+  "private": false,
   "author": "Sadiq",
   "license": "MIT",
   "peerDependencies": {
