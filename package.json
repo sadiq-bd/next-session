@@ -1,0 +1,19 @@
+{
+  "name": "next-session",
+  "version": "1.0.0",
+  "description": "Session lib",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "session"
+  ],
+  "author": "Sadiq",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": "^13.0.0"
+  },
+  "dependencies": {
+    "jose": "^6.0.11",
+    "server-only": "^0.0.1"
+  }
+}
